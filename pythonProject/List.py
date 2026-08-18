@@ -38,7 +38,7 @@ removed_animals = animals.pop(2)
 print(removed_animals)
 print(animals)
 
-'''
+
 # Length of a word
 name = "Ataullah"
 print(len(name))
@@ -50,3 +50,32 @@ print(len(fruits))
 animals = ["Cat", "Dog","Lion", "Tiger", "Wolf"]
 animals.remove("Dog")
 print(len(animals))
+
+
+#checking whether something is in a list
+animals = ["Cat", "Dog", "Lion"]
+if "Tiger" in animals:
+    print("Tigers found")
+else:
+    print("Tiger nor found!")
+'''
+#checking whether something is in a list, if not add that in the list
+fruits = ["Apple", "Banana"]
+if "Mango" not in fruits:
+    fruits.append("Mango")
+print(fruits)
+
+
+#Slicing
+
+fruits = ["Apple", "Banana", "Mango", "Orange", "Kiwi"]
+print(fruits[1:4])
+
+#Slicing
+animals = ["Cat", "Dog", "Lion", "Tiger", "Wolf"]
+print(animals[1:3])
+
+#Slicing from beginning or to the end
+animals = ["Cat", "Dog", "Lion", "Tiger", "Wolf"]
+print(animals[:3])
+print(animals[2:])
