@@ -58,7 +58,7 @@ if "Tiger" in animals:
     print("Tigers found")
 else:
     print("Tiger nor found!")
-'''
+
 #checking whether something is in a list, if not add that in the list
 fruits = ["Apple", "Banana"]
 if "Mango" not in fruits:
@@ -79,3 +79,21 @@ print(animals[1:3])
 animals = ["Cat", "Dog", "Lion", "Tiger", "Wolf"]
 print(animals[:3])
 print(animals[2:])
+
+
+#combine lists + loops + conditions
+
+numbers = [3, 8, 11, 14, 7, 20]
+
+for number in numbers:
+    if number % 2 == 0:
+        print(number)
+'''
+#Now let's build a new list from an old list
+
+numbers = [4, 7, 10, 13, 16, 21, 24]
+odd_numbers = []
+for number in numbers:
+    if number % 2 != 0:
+        odd_numbers.append(number)
+print(odd_numbers)
