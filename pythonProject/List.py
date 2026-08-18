@@ -39,3 +39,14 @@ print(removed_animals)
 print(animals)
 
 '''
+# Length of a word
+name = "Ataullah"
+print(len(name))
+
+# Length of a list
+fruits = ["Apple", "Banana", "Mango"]
+print(len(fruits))
+
+animals = ["Cat", "Dog","Lion", "Tiger", "Wolf"]
+animals.remove("Dog")
+print(len(animals))
