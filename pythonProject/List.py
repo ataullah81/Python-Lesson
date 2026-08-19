@@ -88,7 +88,7 @@ numbers = [3, 8, 11, 14, 7, 20]
 for number in numbers:
     if number % 2 == 0:
         print(number)
-'''
+
 #Now let's build a new list from an old list
 
 numbers = [4, 7, 10, 13, 16, 21, 24]
@@ -97,3 +97,24 @@ for number in numbers:
     if number % 2 != 0:
         odd_numbers.append(number)
 print(odd_numbers)
+
+#Sorting numbers in ascending order
+numbers = [8, 3, 10, 1, 5]
+
+numbers.sort()
+
+print(numbers)
+
+scores = [85, 42, 97, 68, 73]
+
+scores.sort()
+
+print(scores)
+'''
+#Sorting in descending order
+
+numbers = [15, 3, 28, 9, 21]
+
+numbers.sort(reverse=True)
+
+print(numbers)
