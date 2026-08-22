@@ -66,7 +66,7 @@ for score in scores:
     count += 1
 print(count)
 
-'''
+
 
 #Conditional counting
 
@@ -81,3 +81,69 @@ for score in scores:
         failed += 1
 print("Passed: ", passed)
 print("Failed: ", failed)
+
+
+#calculate the percentage of students who passed
+
+scores = [55, 80, 65, 90, 75]
+
+passed = 0
+
+for score in scores:
+    if score >= 70:
+        passed += 1
+total_students = len(scores)
+
+pass_percentage = passed / total_students * 100
+
+print("Passed:",passed)
+print("Total student:",total_students)
+print("Paas percentage:",pass_percentage)
+
+#---------------------------------
+scores = [90, 45, 75, 60, 85, 95, 50, 70]
+
+passed = 0
+failed = 0
+
+for score in scores:
+    if score >= 70:
+        passed += 1
+    else:
+        failed += 1
+
+total_students = len(scores)
+pass_percentage = passed / total_students * 100
+
+print("Passed:", passed)
+print("Failed:", failed)
+print("Total:", total_students)
+print("Pass percentage:", pass_percentage)
+
+#---------------------------------
+#finding values manually with a loop
+scores = [60, 85, 70, 95, 80]
+highest = scores[0]
+for score in scores:
+    if score > highest:
+        highest = score
+print(highest)
+'''
+#---------------------------------
+
+#Highest and lowest
+
+scores = [70, 45, 90, 60, 85]
+
+highest = scores[0]
+lowest = scores[0]
+
+for score in scores:
+    if score > highest:
+        highest = score
+
+    if score < lowest:
+        lowest = score
+
+print("Highest:", highest)
+print("Lowest:", lowest)
