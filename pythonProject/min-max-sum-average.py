@@ -49,8 +49,8 @@ for score in scores:
     total += score
 print(total)
 
-'''
 
+# Calculate sum and average
 numbers = [10, 20, 30, 40]
 total = 0
 for number in numbers:
@@ -66,4 +66,18 @@ for score in scores:
     count += 1
 print(count)
 
+'''
+
 #Conditional counting
+
+scores = [55, 80, 65, 90, 75]
+
+passed = 0
+failed = 0
+for score in scores:
+    if score >= 70:
+        passed += 1
+    else:
+        failed += 1
+print("Passed: ", passed)
+print("Failed: ", failed)
