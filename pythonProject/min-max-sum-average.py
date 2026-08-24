@@ -224,7 +224,7 @@ print("Score sum:",score_sum)
 print("Number passed:",len(passed_scores))
 print("Average:",average_passed)
 
-
+#----------------------------------
 
 #ZeroDivistionError
 
