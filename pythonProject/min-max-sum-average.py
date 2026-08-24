@@ -128,7 +128,7 @@ for score in scores:
     if score > highest:
         highest = score
 print(highest)
-'''
+
 #---------------------------------
 
 #Highest and lowest
@@ -147,3 +147,141 @@ for score in scores:
 
 print("Highest:", highest)
 print("Lowest:", lowest)
+
+
+#---------------------------------
+
+# Score counter
+
+scores = [85, 55, 70, 90, 65, 40]
+
+high = 0
+medium = 0
+low = 0
+
+for score in scores:
+    if score >= 80:
+        high += 1
+    elif score >= 60:
+        medium += 1
+    else:
+        low += 1
+print("High:",high)
+print("Medium:",medium)
+print("Low",low)
+
+#-------------------------------------------
+#Create new list
+
+scores = [85,55, 70, 90, 65, 40]
+
+high_scores = []
+medium_scores = []
+low_scores = []
+
+for score in scores:
+    if score >= 80:
+        high_scores.append(score)
+    elif score >= 60:
+        medium_scores.append(score)
+    else:
+        low_scores.append(score)
+print("High:",high_scores)
+print("Medium:",medium_scores)
+print("Low:",low_scores)
+
+#-------------------------------------------
+
+
+#combine counting and storing
+
+scores = [95, 50, 75, 82, 45, 88]
+
+passed_scores = []
+
+for score in scores:
+    if score >= 70:
+        passed_scores.append(score)
+print("Passed scores:", passed_scores)
+print("Number passed:",len(passed_scores))
+
+
+#-----------------------------------------
+#Calculating average passed scores
+
+scores = [95, 50, 75, 82, 45, 88]
+
+passed_scores = []
+
+for score in scores:
+    if score >= 70:
+        passed_scores.append(score)
+score_sum = sum(passed_scores)
+average_passed =  score_sum / len(passed_scores)
+
+print("Passed scores:", passed_scores)
+print("Score sum:",score_sum)
+print("Number passed:",len(passed_scores))
+print("Average:",average_passed)
+
+
+
+#ZeroDivistionError
+
+scores = [40, 50, 35, 60]
+
+passed_scores = []
+
+for score in scores:
+    if score >= 70:
+        passed_scores.append(score)
+
+if len(passed_scores) > 0:
+    average_passed = sum(passed_scores) / len(passed_scores)
+    print("Average",average_passed)
+else:
+    print("No student passed.")
+
+
+#------------------------------
+
+scores = [45, 80, 90, 55, 75]
+
+passed_scores = []
+
+
+
+for score in scores:
+    if score >= 70:
+        passed_scores.append(score)
+
+
+print("Student passed:",len(passed_scores))
+print("Passed score:", passed_scores)
+
+if len(passed_scores) > 0:
+    average = sum(passed_scores) / len(passed_scores)
+    print("Average: ",average)
+else:
+    print("No student passed")
+'''
+#-----------------------------------
+#Rounding decimal number
+
+scores = [45, 80, 90, 55, 75]
+
+passed_scores = []
+
+for score in scores:
+    if score >= 70:
+        passed_scores.append(score)
+
+if len(passed_scores) > 0:
+    average = sum(passed_scores) / len(passed_scores)
+    average = round(average, 2)
+
+    print("Passed scores:", passed_scores)
+    print("Students passed:", len(passed_scores))
+    print("Average:", average)
+else:
+    print("No students passed.")
